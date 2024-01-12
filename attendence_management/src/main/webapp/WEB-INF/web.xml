@@ -1,0 +1,125 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<filter-name>PageFilter</filter-name>
+  	<display-name>PageFilter</display-name>
+  	<description></description>
+  	<filter-class>com.filter.PageFilter</filter-class>
+  </filter>
+  
+ 
+ 
+   <filter-mapping>
+  	<filter-name>PageFilter</filter-name>
+  	<url-pattern>/admin/admin_home.jsp</url-pattern>
+  </filter-mapping>
+   <filter-mapping>
+  	<filter-name>PageFilter</filter-name>
+  	<url-pattern>/admin/admin_edit.jsp</url-pattern>
+  </filter-mapping>
+   <filter-mapping>
+  	<filter-name>PageFilter</filter-name>
+  	<url-pattern>/admin/all_students.jsp</url-pattern>
+  </filter-mapping>
+   <filter-mapping>
+  	<filter-name>PageFilter</filter-name>
+  	<url-pattern>/admin/Admin_Add_Students.jsp</url-pattern>
+  </filter-mapping>
+   <filter-mapping>
+  	<filter-name>PageFilter</filter-name>
+  	<url-pattern>/faculty/addAttendance.jsp</url-pattern>
+  </filter-mapping>
+   <filter-mapping>
+  	<filter-name>PageFilter</filter-name>
+  	<url-pattern>/faculty/faculty_home.jsp</url-pattern>
+  </filter-mapping>
+   <filter-mapping>
+  	<filter-name>PageFilter</filter-name>
+  	<url-pattern>/student/student_home.jsp</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<display-name>LoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SignupServlet</servlet-name>
+  	<display-name>SignupServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.SignupServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateServlet</servlet-name>
+  	<display-name>UpdateServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EditServlet</servlet-name>
+  	<display-name>EditServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.faculty.EditServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Admin_Add_Sevlet</servlet-name>
+  	<display-name>Admin_Add_Sevlet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.Admin_Add_Sevlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AdminEditServlet</servlet-name>
+  	<display-name>AdminEditServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.admin.AdminEditServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AdminDeleteServlet</servlet-name>
+  	<display-name>AdminDeleteServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.admin.AdminDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<display-name>LogoutServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SignupServlet</servlet-name>
+  	<url-pattern>/SignupServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateServlet</servlet-name>
+  	<url-pattern>/UpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EditServlet</servlet-name>
+  	<url-pattern>/EditServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Admin_Add_Sevlet</servlet-name>
+  	<url-pattern>/Admin_Add_Sevlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AdminEditServlet</servlet-name>
+  	<url-pattern>/AdminEditServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AdminDeleteServlet</servlet-name>
+  	<url-pattern>/AdminDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
